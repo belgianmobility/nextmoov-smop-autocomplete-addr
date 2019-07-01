@@ -22,7 +22,9 @@ Take care to set system settings:
 sysctl -w vm.max_map_count=262144
 ```
 
-### Postgis
+### Database
+
+Postgresql 11 with Postgis extension enabled.
 
 ### Importer
 
