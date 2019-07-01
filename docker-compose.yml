@@ -1,0 +1,36 @@
+version: '3'
+services:
+  postgis:
+    build: postgis
+    #ports:
+      #- "5432:5432"
+    volumes:
+      - postgis:/var/lib/postgresql/data
+
+  elastic:
+    image: elasticsearch:6.4.3
+    #ports:
+      #- "9200:9200"
+    volumes:
+      - elastic:/usr/share/elasticsearch/data
+
+  importer:
+    build: importer
+    depends_on:
+      - postgis
+      - elastic
+    volumes:
+      - importer:/app/tmp
+
+  api:
+    build: api
+    depends_on:
+      - postgis
+      - elastic
+    ports:
+      - "8082:80"
+
+volumes:
+  elastic:
+  importer:
+  postgis:
