@@ -1,0 +1,40 @@
+tables:
+  admin_boundaries:
+    type: polygon
+    mapping:
+      boundary: [administrative]
+    columns:
+      - {name: osm_id, type: id}
+      - {name: geom, type: geometry}
+      - {key: admin_level, name: admin_level, type: integer}
+      - {key: name, name: name, type: string}
+      - {key: "name:fr", name: name_fr, type: string}
+      - {key: "name:nl", name: name_nl, type: string}
+      - {key: "name:en", name: name_en, type: string}
+      - {key: "name:de", name: name_de, type: string}
+
+  highways:
+    type: linestring
+    mapping:
+      highway: [__any__]
+    columns:
+      - {name: osm_id, type: id}
+      - {name: geom, type: geometry}
+      - {name: type, type: mapping_value}
+      - {key: name, name: name, type: string}
+      - {key: "name:fr", name: name_fr, type: string}
+      - {key: "name:nl", name: name_nl, type: string}
+      - {key: "name:en", name: name_en, type: string}
+      - {key: "name:de", name: name_de, type: string}
+
+  house_link_member:
+    type: relation_member
+    columns:
+      - {name: osm_id, type: id}
+      - {name: member_id, type: member_id}
+      - {name: role, type: member_role}
+      - {key: name, name: name, type: string, from_member: true}
+      - {name: geom, type: geometry, from_member: true}
+      - {key: "addr:housenumber", name: number, type: string, from_member: true}
+    mapping:
+      __any__: [__any__]
