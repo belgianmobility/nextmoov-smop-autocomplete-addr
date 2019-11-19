@@ -2,16 +2,6 @@
 
 # SMOP - Autocomplete - Addresses
 
-## How to use
-
-All modules provides a Dockerfile for easy startup:
-
-```
-docker-compose up
-```
-
-Tested with docker-compose version 1.21.0.
-
 ## Modules
 
 ### Database
@@ -24,7 +14,7 @@ The importer will automatically download latest version of belgium-latest.osm.pb
 
 ### Api
 
-After startup you can contact the API on http://localhost:8082/autocomplete/address.
+After startup you can contact the API on http://localhost:8080/autocomplete/address.
 
 You can POST the following JSON :
 
