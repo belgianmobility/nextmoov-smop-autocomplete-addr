@@ -30,8 +30,7 @@ You can POST the following JSON :
 
 ```
 {
-    "text": "rue de la vierge 35, marche",
-    "position": [50.84547, 4.35767]
+    "text": "rue de la vierge 35, marche"
 }
 ```
 
@@ -39,7 +38,8 @@ or with a position to give more importance to near locations :
 
 ```
 {
-    "text": "rue de la vierge 35, marche"
+    "text": "rue de la vierge 35, marche",
+    "position": [50.84547, 4.35767]
 }
 ```
 
