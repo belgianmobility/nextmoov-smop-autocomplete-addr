@@ -1,18 +1,20 @@
-version: '3'
+version: '3.3'
 services:
   postgis:
     build: postgis
-    #ports:
-      #- "5432:5432"
     volumes:
       - postgis:/var/lib/postgresql/data
+    #ports:
+      #- "5432:5432"
 
   elastic:
     image: elasticsearch:6.4.3
-    #ports:
-      #- "9200:9200"
+    environment:
+      - discovery.type=single-node
     volumes:
       - elastic:/usr/share/elasticsearch/data
+    #ports:
+      #- "9200:9200"
 
   importer:
     build: importer
