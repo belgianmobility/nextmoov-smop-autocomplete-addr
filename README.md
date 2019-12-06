@@ -10,7 +10,7 @@
   - docker
 
 ## Running the service
-- clone the repo, and move into the creted folder  
+- clone the repo, and move into the created folder  
    `git clone git@github.com:nextmoov/nextmoov-smop-autocomplete-addr.git`
 - run via docker-compose  
   `docker-compose up`
