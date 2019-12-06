@@ -2,7 +2,6 @@
 
 # SMOP - Autocomplete - Addresses
 
-
 ## Requirements
   - docker
 
@@ -13,6 +12,9 @@
   `docker-compose up`
 
 ## Modules 
+
+### Illustration 
+![autocomplete-addr](https://user-images.githubusercontent.com/10850995/70313437-ebf05f00-1815-11ea-9ce9-62714de79343.png)
 
 ### Database
 
@@ -28,7 +30,7 @@ After startup you can contact the API on http://localhost:8080/autocomplete/addr
 
 You can POST the following JSON :
 
-```
+```JSON
 {
     "text": "rue de la vierge 35, marche"
 }
@@ -36,7 +38,7 @@ You can POST the following JSON :
 
 or with a position to give more importance to near locations :
 
-```
+```JSON
 {
     "text": "rue de la vierge 35, marche",
     "position": [50.84547, 4.35767]
@@ -45,8 +47,7 @@ or with a position to give more importance to near locations :
 
 Example of reply :
 
-
-```
+```JSON
 [
     {
         "_source": {
