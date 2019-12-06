@@ -2,11 +2,19 @@
 
 # SMOP - Autocomplete - Addresses
 
-#### Illustration 
+## Requirements
+  - docker
+
+## Running the service
+- clone the repo, and move into the creted folder  
+   `git clone git@github.com:nextmoov/nextmoov-smop-autocomplete-addr.git`
+- run via docker-compose  
+  `docker-compose up`
+
+## Modules 
+
+### Illustration 
 ![autocomplete-addr](https://user-images.githubusercontent.com/10850995/70313437-ebf05f00-1815-11ea-9ce9-62714de79343.png)
-
-
-## Modules
 
 ### Database
 
@@ -290,3 +298,4 @@ Example of reply :
     }
 ]
 ```
+
