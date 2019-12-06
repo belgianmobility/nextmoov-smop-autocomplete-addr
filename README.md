@@ -2,6 +2,10 @@
 
 # SMOP - Autocomplete - Addresses
 
+#### Illustration 
+![autocomplete-addr](https://user-images.githubusercontent.com/10850995/70313437-ebf05f00-1815-11ea-9ce9-62714de79343.png)
+
+
 ## Requirements
   - docker
 
@@ -13,16 +17,13 @@
 
 ## Modules 
 
-### Illustration 
-![autocomplete-addr](https://user-images.githubusercontent.com/10850995/70313437-ebf05f00-1815-11ea-9ce9-62714de79343.png)
-
 ### Database
 
 Postgresql 11 with Postgis extension enabled.
 
 ### Importer
 
-The importer will automatically download latest version of belgium-latest.osm.pbf from Geofabrik (See [General - Data](https://github.com/nextmoov/nextmoov-smop-general#maps) for more information) and index it if it changed.
+The importer will automatically download latest version of a given osm.pbf file (defined in [importer/config.js](importer/config.js#L2)) currently set on belgium-latest.osm.pbf from Geofabrik (See [General - Data](https://github.com/nextmoov/nextmoov-smop-general#maps) for more information) and index it if it changed.
 
 ### Api
 
