@@ -15,6 +15,10 @@
 - run via docker-compose  
   `docker-compose up`
 
+## Architecture
+![Software Architecture - Addresses auto-complete](https://user-images.githubusercontent.com/10850995/70332032-fc69ff00-1840-11ea-830f-ab5a7f39d4b4.jpg)
+
+
 ## Modules 
 
 ### Database
