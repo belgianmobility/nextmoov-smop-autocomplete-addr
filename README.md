@@ -2,6 +2,10 @@
 
 # SMOP - Autocomplete - Addresses
 
+#### Illustration 
+![autocomplete-addr](https://user-images.githubusercontent.com/10850995/70313437-ebf05f00-1815-11ea-9ce9-62714de79343.png)
+
+
 ## Modules
 
 ### Database
