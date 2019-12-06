@@ -22,7 +22,7 @@ After startup you can contact the API on http://localhost:8080/autocomplete/addr
 
 You can POST the following JSON :
 
-```
+```JSON
 {
     "text": "rue de la vierge 35, marche"
 }
@@ -30,7 +30,7 @@ You can POST the following JSON :
 
 or with a position to give more importance to near locations :
 
-```
+```JSON
 {
     "text": "rue de la vierge 35, marche",
     "position": [50.84547, 4.35767]
@@ -39,7 +39,7 @@ or with a position to give more importance to near locations :
 
 Example of reply :
 
-```
+```JSON
 [
     {
         "_source": {
