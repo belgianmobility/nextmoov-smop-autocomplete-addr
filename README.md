@@ -2,7 +2,17 @@
 
 # SMOP - Autocomplete - Addresses
 
-## Modules
+
+## Requirements
+  - docker
+
+## Running the service
+- clone the repo, and move into the creted folder  
+   `git clone git@github.com:nextmoov/nextmoov-smop-autocomplete-addr.git`
+- run via docker-compose  
+  `docker-compose up`
+
+## Modules 
 
 ### Database
 
@@ -34,6 +44,7 @@ or with a position to give more importance to near locations :
 ```
 
 Example of reply :
+
 
 ```
 [
@@ -286,3 +297,4 @@ Example of reply :
     }
 ]
 ```
+
