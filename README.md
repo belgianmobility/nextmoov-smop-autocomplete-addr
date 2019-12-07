@@ -11,7 +11,7 @@
   - docker-compose
 
 ## Running the service
-- clone the repo 
+- clone the repo  
    `git clone git@github.com:nextmoov/nextmoov-smop-autocomplete-addr.git`
 - move into the created folder  
    `cd nextmoov-smop-autocomplete-addr`
