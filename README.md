@@ -30,7 +30,7 @@ Postgresql 11 with Postgis extension enabled.
 
 ### Importer
 
-The importer will automatically download latest version of a given osm.pbf file (defined in [importer/config.js](importer/config.js#L2)) currently set on belgium-latest.osm.pbf from Geofabrik (See [General - Data](https://github.com/nextmoov/nextmoov-smop-general#maps) for more information) and index it if it changed.
+The importer will acquire an [osm.pbf](https://wiki.openstreetmap.org/wiki/PBF_Format) file (defined in [importer/config.js](importer/config.js#L2), currently set on belgium-latest.osm.pbf from Geofabrik – see [General - Data](https://github.com/nextmoov/nextmoov-smop-general#maps) for more information).
 
 ### Api
 
