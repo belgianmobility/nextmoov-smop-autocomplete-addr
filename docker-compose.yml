@@ -17,7 +17,7 @@ services:
       
   # ----- autocomplete addr ----------------------------------------------------
   autocomplete-addr-postgis:
-    build: ./nextmoov-smop-autocomplete-addr/postgis
+    build: ./postgis
     volumes:
       - autocomplete-addr-postgis:/var/lib/postgresql/data
     #ports:
@@ -33,7 +33,7 @@ services:
       #- "9200:9200"
 
   autocomplete-addr-importer:
-    build: ./nextmoov-smop-autocomplete-addr/importer
+    build: ./importer
     depends_on:
       - autocomplete-addr-postgis
       - autocomplete-addr-elastic
@@ -41,7 +41,7 @@ services:
       - autocomplete-addr-importer:/app/tmp
 
   autocomplete-addr-api:
-    build: ./nextmoov-smop-autocomplete-addr/api
+    build: ./api
     depends_on:
       - autocomplete-addr-importer
       - autocomplete-addr-postgis
